@@ -1,24 +1,34 @@
 # README
+### 開発環境
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- ruby '2.6.6'
+- rails '6.1.4'
+- PostgreSQL '13.3'
 
-Things you may want to cover:
+### database
 
-* Ruby version
+|users|data type|
+|-----|-----|
+|id|integer|
+|name|string|
+|email|string|
+|password|string|
 
-* System dependencies
+|tasks|data type|
+|-----|-----|
+|id|integer|
+|user_id|integer|
+|title|string|
+|content|text|
+|expiration_date|datetime|
 
-* Configuration
+|labels|data type|
+|-----|-----|
+|id|integer|
+|name|string|
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+|labelings|data type|
+|-----|-----|
+|id|integer|
+|task_id|integer|
+|label_id|integer|
