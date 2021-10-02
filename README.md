@@ -2,7 +2,7 @@
 ### 開発環境
 
 - ruby '2.6.6'
-- rails '6.1.4'
+- rails '5.2.6'
 - PostgreSQL '13.3'
 
 ### database
