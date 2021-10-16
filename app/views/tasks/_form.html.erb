@@ -1,0 +1,15 @@
+<%= form_with(model: @task, local: true) do |form| %>
+  <div class="task_title">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div class="task_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+<!--  <div class="task_expiration_date">
+    <%#= form.label :deadline %>
+    <%#= form.date_field :expiration_date %>
+  </div> -->
+  <%= form.submit %>
+<% end %>
